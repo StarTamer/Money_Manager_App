@@ -1,4 +1,4 @@
-package com.example.money_manager_app
+package com.example.money_manager_app.ui.setting
 
 import androidx.lifecycle.ViewModel
 
