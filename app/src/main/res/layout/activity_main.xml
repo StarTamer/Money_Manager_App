@@ -4,15 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/activity_main"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="#8CBBD8"
+        android:fontFamily="sans-serif"
+        android:text="MainActivity"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.money_manager_app.ShoppingListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
