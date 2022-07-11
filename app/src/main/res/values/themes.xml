@@ -12,5 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/primaryDarker</item>
+        <item name="colorControlHighlight">@color/primaryDarker</item>
+        <item name="colorAccent">#A3A3A3</item>
     </style>
 </resources>

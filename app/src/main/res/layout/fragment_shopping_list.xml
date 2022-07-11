@@ -6,25 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ShoppingListFragment">
 
-    <TextView
-        android:id="@+id/textView2"
+    <LinearLayout
+        android:id="@+id/linlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8CBBD8"
-        android:fontFamily="sans-serif"
-        android:paddingLeft="16dp"
-        android:paddingTop="18dp"
-        android:paddingBottom="18dp"
-        android:text="@string/shopping_list"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="normal"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        android:background="#8CBBD8">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="@string/shopping_list"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/btnAddToExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить к тратам"
+            android:textSize="10sp"
+            android:backgroundTint="@color/primaryDarker"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/conlay"
@@ -36,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/linlay">
 
 
         <androidx.recyclerview.widget.RecyclerView

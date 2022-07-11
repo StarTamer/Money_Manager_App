@@ -3,13 +3,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="shopping_list">Список покупок</string>
     <string-array name="categories">
-        <item>Супермаркеты</item>
-        <item>Одежда и аксессуары</item>
-        <item>ЖКХ, связь, интернет</item>
-        <item>Рестораны и кафе</item>
-        <item>Онлайн-маркеты</item>
-        <item>Здоровье и красота</item>
+        <item>Продукты, еда</item>
+        <item>Дом, жилье</item>
+        <item>Счета и услуги</item>
+        <item>Техника, мебель</item>
+        <item>Долги</item>
         <item>Транспорт</item>
+        <item>Здоровье и красота</item>
+        <item>Одежда</item>
         <item>Прочее</item>
     </string-array>
 </resources>
