@@ -24,7 +24,7 @@ class Settings : Fragment(R.layout.fragment_settings) {
                 (etBalance.text ?: "Error").toString()
             )
             findNavController().navigate(
-                R.id.
+
             )
         }
     }
